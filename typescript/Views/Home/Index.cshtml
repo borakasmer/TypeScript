@@ -1,0 +1,30 @@
+﻿<head>
+	<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+	<script src="~/Scripts/Products.js"></script>
+</head>
+<body background="~/Images/back2.jpg" style="background-repeat: no-repeat;">
+	<div class="jumbotron">
+		<h1><font color="Yellow">TypeScript WebApi</font></h1>
+	</div>
+	<div><input type="button" value="Yeni Kayıt Ekle" id="btnAdd" onclick="Add()" /></div><br />
+	<font color="white">
+		<div>Ürün Ara ID:<input type="text" id="txtID"><input type="button" value="Ara" id="btnAra" onclick="Ara()" /></div><br />
+		<div class="row" id="content">
+		</div>
+	</font>
+	<div id="addDiv" style="display:none">
+		<hr />
+		<b>
+			<font color="lightgreen">
+				<b>
+					Adı: <input type="text" id="txtName" /> Kategorisi: <input type="text" id="txtCategory"> Fiyatı: <input type="text" id="txtPrice" /> Kur:
+					<select id="opCurrency">
+						<option value=2.66>$</option>
+						<option value=2.92>Eur</option>
+						<option value=1>TL</option>
+					</select>
+				</b>
+			</font>
+		</b> <input type="button" value="Kaydet" id="btnSave" onclick="Save()" />
+	</div>
+</body>
